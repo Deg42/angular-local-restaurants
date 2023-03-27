@@ -5,13 +5,14 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 @Component({
   selector: 'home-component',
   templateUrl: 'home.component.html',
+  styles: ["img{width: 10em}"]
 })
 export class HomeComponent implements OnInit {
 
   constructor(private responsive: BreakpointObserver) { }
 
   restaurants: Restaurant[] = [
-    { name: 'Restaurante 1', url: '', tel: 600000000 },
+    new RestaurantImpl('El Olivo', 'https://www.reddit.com/', 600000000),
     { name: 'Restaurante 1', url: '', tel: 600000000 },
     { name: 'Restaurante 1', url: '', tel: 600000000 },
     { name: 'Restaurante 1', url: '', tel: 600000000 },
@@ -55,5 +56,18 @@ export class HomeComponent implements OnInit {
           console.log("screens matches Large" + this.colCount);
         }
       });
+  }
+}
+
+class RestaurantImpl implements Restaurant {
+  name: string;
+  image?: string = 'assets/images/spaghetti-carbonara.jpg';
+  url: string;
+  tel: number;
+ 
+  constructor(name: string, url: string, tel: number){
+    this.name = name;
+    this.url = url;
+    this.tel = tel;
   }
 }

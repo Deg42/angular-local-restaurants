@@ -1,11 +1,15 @@
 <mat-toolbar color="primary" class="mat-h1">
-    <span>My Application</span>
+    <span>Restaurantes Locales</span>
 </mat-toolbar>
 <mat-grid-list [cols]=colCount rowHeight="2:1">
     <mat-grid-tile *ngFor="let restaurant of restaurants">
-        <mat-card>
+        <mat-card width=300px>
             <mat-card-header><mat-card-title>{{restaurant.name}}</mat-card-title></mat-card-header>
-            <mat-card-content></mat-card-content>
+                <img mat-card-image [src]="restaurant.image" alt="Restaurant Photo">
+            <mat-card-actions align="end">
+                <a mat-button target="_blank" href="{{restaurant.url}}">CARTA</a>
+                <a mat-button href="tel:{{restaurant.tel}}">TELÉFONO</a>
+            </mat-card-actions>
         </mat-card>
     </mat-grid-tile>
 </mat-grid-list>
