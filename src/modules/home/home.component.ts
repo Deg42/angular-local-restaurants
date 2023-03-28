@@ -5,25 +5,23 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 @Component({
   selector: 'home-component',
   templateUrl: 'home.component.html',
-  styles: ["img{width: 10em}"]
+  styleUrls: ['home.component.css']
 })
 export class HomeComponent implements OnInit {
 
   constructor(private responsive: BreakpointObserver) { }
 
   restaurants: Restaurant[] = [
-    new RestaurantImpl('El Olivo', 'https://www.reddit.com/', 600000000),
-    { name: 'Restaurante 1', url: '', tel: 600000000 },
-    { name: 'Restaurante 1', url: '', tel: 600000000 },
-    { name: 'Restaurante 1', url: '', tel: 600000000 },
-    { name: 'Restaurante 1', url: '', tel: 600000000 },
-    { name: 'Restaurante 1', url: '', tel: 600000000 },
-    { name: 'Restaurante 1', url: '', tel: 600000000 },
-    { name: 'Restaurante 1', url: '', tel: 600000000 },
-    { name: 'Restaurante 1', url: '', tel: 600000000 },
-    { name: 'Restaurante 1', url: '', tel: 600000000 },
-    { name: 'Restaurante 1', url: '', tel: 600000000 },
-    { name: 'Restaurante 1', url: '', tel: 600000000 },
+    new RestaurantImpl('El Olivo', 'C. Barquete, 23A, 41400 Écija, Sevilla', 'https://www.reddit.com/', 600000000),
+    new RestaurantImpl('El Olivo', 'C. Barquete, 23A, 41400 Écija, Sevilla', 'https://www.reddit.com/', 600000000),
+    new RestaurantImpl('El Olivo', 'C. Barquete, 23A, 41400 Écija, Sevilla', 'https://www.reddit.com/', 600000000),
+    new RestaurantImpl('El Olivo', 'C. Barquete, 23A, 41400 Écija, Sevilla', 'https://www.reddit.com/', 600000000),
+    new RestaurantImpl('El Olivo', 'C. Barquete, 23A, 41400 Écija, Sevilla', 'https://www.reddit.com/', 600000000),
+    new RestaurantImpl('El Olivo', 'C. Barquete, 23A, 41400 Écija, Sevilla', 'https://www.reddit.com/', 600000000),
+    new RestaurantImpl('El Olivo', 'C. Barquete, 23A, 41400 Écija, Sevilla', 'https://www.reddit.com/', 600000000),
+    new RestaurantImpl('El Olivo', 'C. Barquete, 23A, 41400 Écija, Sevilla', 'https://www.reddit.com/', 600000000),
+    new RestaurantImpl('El Olivo', 'C. Barquete, 23A, 41400 Écija, Sevilla', 'https://www.reddit.com/', 600000000),
+    new RestaurantImpl('El Olivo', 'C. Barquete, 23A, 41400 Écija, Sevilla', 'https://www.reddit.com/', 600000000)
   ];
 
   colCount: number = 1;
@@ -61,12 +59,14 @@ export class HomeComponent implements OnInit {
 
 class RestaurantImpl implements Restaurant {
   name: string;
+  address: string;
   image?: string = 'assets/images/spaghetti-carbonara.jpg';
   url: string;
   tel: number;
  
-  constructor(name: string, url: string, tel: number){
+  constructor(name: string, address: string, url: string, tel: number){
     this.name = name;
+    this.address = address;
     this.url = url;
     this.tel = tel;
   }
