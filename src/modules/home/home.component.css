@@ -9,15 +9,19 @@
     margin: 1.5rem;
     max-width: 400px;
     overflow: hidden;
+    justify-content: space-between;
 }
 
 .card-image-link>* {
     width: 100%;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .card-image {
-    filter: blur(5px) brightness(0.80);
+    filter: blur(1.5px) brightness(0.50);
     margin: 10px 0px;
+    max-height: 150px;
+    object-fit: cover;
 }
 
 .card-image-text {
@@ -26,7 +30,11 @@
     left: 0%;
 
     text-align: center;
-    font-size:2rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #FAFAFA;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
 }

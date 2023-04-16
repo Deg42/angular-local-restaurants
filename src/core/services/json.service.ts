@@ -24,7 +24,7 @@ export class JsonService {
   private assignDefaults(restaurant: Restaurant): Restaurant {
     return {
       ...restaurant,
-      image: restaurant.image ?? 'assets/images/spaghetti-carbonara.jpg',
+      image: (restaurant.image == null || restaurant.image == "") ? 'assets/images/thumbnails/spaghetti-carbonara.jpg' : restaurant.image,
     };
   }
 

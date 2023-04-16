@@ -1,23 +1,37 @@
 [
     {
-        "name": "El Olivo",
-        "address": "C. Barquete, 23A, 41400 Écija, Sevilla",
-        "image": null,
-        "url": "https://www.reddit.com/",
-        "tel": 600000000
+        "name": "Bar El Olivo",
+        "address": "C. Barquete, 23A. Écija, Sevilla",
+        "image": "assets/images/thumbnails/bar-el-olivo.jpg",
+        "url": "assets/images/menus/bar-el-olivo.jpg",
+        "tel": 633962223
     },
     {
-        "name": "El Olivo",
-        "address": "C. Barquete, 23A, 41400 Écija, Sevilla",
-        "image": null,
-        "url": "https://www.reddit.com/",
-        "tel": 600000000
+        "name": "El Cortijo",
+        "address": "C. Albaicín, s/n. Bda. La Alhambra. Écija, Sevilla",
+        "image": "assets/images/thumbnails/el-cortijo.jpg",
+        "url": "https://qrguia.com/bares/elcortijo/",
+        "tel":  954835490 
     },
     {
-        "name": "El Olivo",
-        "address": "C. Barquete, 23A, 41400 Écija, Sevilla",
-        "image": null,
-        "url": "https://www.reddit.com/",
-        "tel": 600000000
+        "name": "Malavoca Restaurante",
+        "address": "Avda. del Genil, 6A. Écija, Sevilla",
+        "image": "assets/images/thumbnails/malavoca-restaurante.jpg",
+        "url": "https://miramicarta.es/malavoca/",
+        "tel":  637374776 
+    },
+    {
+        "name": "Pizzeria Ecilandia",
+        "address": "C. Pinsapo, 5. Écija, Sevilla",
+        "image": "https://tiendaonline2.pizzagest.info/produccion/recursos/673/imagenes/logo.png",
+        "url": "https://ecilandia.es/",
+        "tel":  955903870 
+    },
+    {
+        "name": "María Castaña Tapas & Bar",
+        "address": "C. Emilio Castelar, 13. Écija, Sevilla",
+        "image": "https://miramicarta.es/wp-content/uploads/2022/11/logo-mariacastana-1024x754.png",
+        "url": "https://miramicarta.es/maria-castana-tapas-bar/",
+        "tel":  634793581 
     }
 ]
