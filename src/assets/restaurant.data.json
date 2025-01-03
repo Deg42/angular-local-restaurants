@@ -1,17 +1,31 @@
 [
     {
-        "name": "Bar El Olivo",
-        "address": "C. Barquete, 23A. Écija, Sevilla",
-        "image": "assets/images/thumbnails/bar-el-olivo.jpg",
-        "url": "https://cdn.me-qr.com/pdf/13604770.pdf",
-        "tel": 633962223
-    },
-    {
         "name": "El Cortijo",
         "address": "C. Albaicín, s/n. Bda. La Alhambra. Écija, Sevilla",
         "image": "assets/images/thumbnails/el-cortijo.jpg",
         "url": "https://qrguia.com/bares/elcortijo/",
         "tel":  954835490 
+    },
+    {
+        "name": "Restaurante Cien Vinos Natural Food",
+        "address": "Av. Miguel de Cervantes, 52. Écija, Sevilla",
+        "image": "https://cienvinos.es/wp-content/uploads/2023/02/logotipo-cien-vinos-restaurante.png",
+        "url": "https://cienvinos.es/",
+        "tel":  955095609 
+    },
+    {
+        "name": "Restaurante La Alcarraza",
+        "address": "Av. Blas Infante, 6. Écija, Sevilla",
+        "image": "https://oidokocina.com/pics/468/alcarraza-restaurante-comida-domicilio.jpg",
+        "url": "https://www.thefork.es/restaurante/bar-cafeteria-la-alcarraza-r807001/menu",
+        "tel":  955159718 
+    },
+    {
+        "name": "Bar Agora Tapas",
+        "address": "C. Barquete, 38A. Écija, Sevilla",
+        "image": "https://agora.miramicarta.es/wp-content/uploads/2023/05/logo-agora.png",
+        "url": "https://agora.miramicarta.es/",
+        "tel":  955317077 
     },
     {
         "name": "Malavoca Restaurante",
@@ -33,5 +47,12 @@
         "image": "https://miramicarta.es/wp-content/uploads/2022/11/logo-mariacastana-1024x754.png",
         "url": "https://miramicarta.es/maria-castana-tapas-bar/",
         "tel":  634793581 
+    },
+    {
+        "name": "Restaurante Laurel Tapas",
+        "address": "Av. Andalucía, 14. Écija, Sevilla",
+        "image": "assets/images/thumbnails/laurel.png",
+        "url": "https://laureltapas.com/",
+        "tel":  652951702 
     }
 ]

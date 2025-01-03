@@ -1,9 +1,13 @@
 <mat-toolbar color="primary" class="mat-h1">
     <span>Restaurantes Locales</span>
     <span class="example-spacer"></span>
-    <small>v0.9</small>
+    <small>
+        <a mat-button href="https://github.com/Deg42/Angular-Local-Restaurants">
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="bug_report"></mat-icon>
+        </a>
+    </small>
 </mat-toolbar>
-<div class="card-container" >
+<div class="card-container">
     <mat-card class="restaurant-card" *ngFor="let restaurant of restaurants">
         <mat-card-header>
             <mat-card-title>{{restaurant.name}}</mat-card-title>
